@@ -1,0 +1,198 @@
+Ejercicio 1
+int main() {
+    int dir_var = 15;
+    printf("La direcion de dir_var es: %p \n ", &dir_var);
+    return 0;
+}
+
+
+Asignacion de apuntadores 
+Obtencion de la dir de memoria Ejercicio 1 
+
+int main(){
+int i =  5 ;
+int *p,*q;
+p =&i;// se le asigna ap la direccion de i 
+1 = p ; // se le asigna a q la direccion que almacena p
+}
+
+int *ptr_intr;
+char *ptr_char;
+
+
+Ejercicio # 3
+
+   int value = 18;
+    int  *ptr_1, *ptr_2;
+    ptr_1 = &value;
+    ptr_2 = ptr_1;
+
+    printf("La direccion de memoria de ptr_2 = %p",ptr_2);
+
+Desreferenciacion de apuntadores 
+
+Ejemplo #4
+int x = 17,y;
+int *p;
+p=&x;
+printf("El valor de x es: &d",p) // imprime 17
+y = *p + 3; // A 'y' se asigna 20
+
+Ejercicio #4
+
+int main() {
+ int x = 33;
+ int y ;
+ int *p;
+ p = &x;
+ printf("El valor de p es %d ",*p);
+ y = *p +10;
+ printf("el valor de y es %d",y);
+ return 0;
+
+}
+
+Desrefenciacion de apuntadores 
+
+Ejemplo# 5
+
+struct Data {
+char nombre[20];
+int edad ;
+
+};
+
+struct Data d ;
+struct Data *pd = &d;
+
+(*pd).edad = 23;
+pd-> edad = 23;
+printf("Edad: %d", pd -> edad);
+
+
+Ejercicio # 5
+
+int main() {
+ struct Articulo {
+  char nombre[20];
+  char description [100];
+  float precio;
+
+ };
+
+ struct Articulo art;
+ struct Articulo *ptr_art = &art;
+
+ (*ptr_art).precio = 50.38;
+ ptr_art->precio = 50.38;
+ printf("Precio: %f",ptr_art->precio);
+ return 0;
+
+}
+
+  
+Verificacion de tipos en apuntadores
+Ejemplo #6
+
+int *p1; //apuntador de tipo entero 
+float *p2; // apuntador de tipo float
+int x;  
+p1 = &x; // esto es valido los dos son del mismo tipo de dato 
+
+p2 = &x; // esto  no es calido 
+
+
+Ejecicio #6
+
+int main() {
+ int *ptr_int;
+ float *ptr_float;
+ int value;
+ ptr_int = &value;// valido 
+// ptr_float =&value; // invalido 
+ return 0;
+
+}
+
+
+Direcciones invalidas 
+
+
+float *p;
+printf("El valor aputado p es : %f",*p) // incorrecto no devuelve una direccion valida 
+*p = 3.5 // incorrecto no podemos inicializar al final 
+
+
+Ejemplo #8
+
+
+Opcion 2)
+
+
+int *p, y;
+void funo(){
+int  = 40;
+p = &x;
+y =*p; //correcto 
+*p = 23;// correcto 
+}
+int main (){
+funo();
+y = *p; // incorrecto 
+*p = 25;// incorrecto 
+
+}
+
+#Ejercicio #8
+
+
+int *ptr_int, var;
+
+void init_ptr(){
+  int local = 57;
+  ptr_int = &local;
+  var = *ptr_int;
+  *ptr_int = 23;
+}
+  int main() {
+   init_ptr();
+ //  var = *ptr_int; //se corrompieron 
+  // *ptr_int = 20; //no es  correcto 
+  return 0;
+
+  }
+
+Apuntadores a apuntadores 
+
+Ejemplo #9
+
+char c = 'z';
+char *pc = &c;
+char **ppc = &pc;
+char ***pppc = &ppc;
+***pppc = 'm'; // Cambia el valor de c a M
+
+Ejercicio #9
+ int main() {
+char c = 'z';
+char *pc = &c;
+char **ppc = &pc;
+char ***pppc = &ppc;
+***pppc = 'm'; // Cambia el valor de c a M
+
+printf("El valor del ultimo apuntadores : %c",***pppc);
+  return 0;
+
+  }
+
+Apuntadores Constantes
+
+Ejeemplo # 10
+
+int x = 5, y = 7;
+int *const p = &x;// declaracion e inicializacin del apuntador constante
+*p = 3; // Esto es valido
+p = &y //Esto no es valido 
+
+Ejercicio # 10
+
