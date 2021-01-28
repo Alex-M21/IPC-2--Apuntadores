@@ -1,19 +1,11 @@
 #include <stdio.h>
 
 int main() {
- struct Articulo {
-  char nombre[20];
-  char description [100];
-  float precio;
-
- };
-
- struct Articulo art;
- struct Articulo *ptr_art = &art;
-
- (*ptr_art).precio = 50.38;
- ptr_art->precio = 50.38;
- printf("Precio: %f",ptr_art->precio);
+ int *ptr_int;
+ float *ptr_float;
+ int value;
+ ptr_int = &value;// valido 
+// ptr_float =&value; // invalido 
  return 0;
 
 }
