@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-int main() {
- int *ptr_int;
+  int main() {
  float *ptr_float;
- int value;
- ptr_int = &value;// valido 
-// ptr_float =&value; // invalido 
- return 0;
+ printf("el valor apuntao por pptr_float s %f ",*ptr_float);
+ *ptr_float = 10.5;
+  return 0;
 
-}
+  }
 
   
