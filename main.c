@@ -1,15 +1,12 @@
 #include <stdio.h>
 
   int main() {
-char c = 'z';
-char *pc = &c;
-char **ppc = &pc;
-char ***pppc = &ppc;
-***pppc = 'm'; // Cambia el valor de c a M
+int a = 10, b = 15;
+int *const ptr = &a;
+*ptr = 3;
 
-printf("El valor del ultimo apuntadores : %c",***pppc);
-  return 0;
-
+// ptr =  &b; // incorrecto 
+return 0;
   }
 
   
