@@ -7,5 +7,7 @@ int main() {
     ptr_2 = ptr_1;
 
     printf("La direccion de memoria de ptr_2 = %p",ptr_2);
+    return(0);
+    
 }
   
