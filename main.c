@@ -1,16 +1,13 @@
 #include <stdio.h>
-int *ptr_int, var;
 
-void init_ptr(){
-  int local = 57;
-  ptr_int = &local;
-  var = *ptr_int;
-  *ptr_int = 23;
-}
   int main() {
-   init_ptr();
- //  var = *ptr_int; //se corrompieron 
-  // *ptr_int = 20; //no es  correcto 
+char c = 'z';
+char *pc = &c;
+char **ppc = &pc;
+char ***pppc = &ppc;
+***pppc = 'm'; // Cambia el valor de c a M
+
+printf("El valor del ultimo apuntadores : %c",***pppc);
   return 0;
 
   }
