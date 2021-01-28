@@ -1,9 +1,16 @@
 #include <stdio.h>
+int *ptr_int, var;
 
+void init_ptr(){
+  int local = 57;
+  ptr_int = &local;
+  var = *ptr_int;
+  *ptr_int = 23;
+}
   int main() {
- float *ptr_float;
- printf("el valor apuntao por pptr_float s %f ",*ptr_float);
- *ptr_float = 10.5;
+   init_ptr();
+ //  var = *ptr_int; //se corrompieron 
+  // *ptr_int = 20; //no es  correcto 
   return 0;
 
   }
