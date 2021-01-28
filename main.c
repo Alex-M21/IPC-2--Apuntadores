@@ -1,14 +1,21 @@
 #include <stdio.h>
 
 int main() {
- int x = 33;
- int y ;
- int *p;
- p = &x;
- printf("El valor de p es %d ",*p);
- y = *p +10;
- printf("el valor de y es %d",y);
+ struct Articulo {
+  char nombre[20];
+  char description [100];
+  float precio;
+
+ };
+
+ struct Articulo art;
+ struct Articulo *ptr_art = &art;
+
+ (*ptr_art).precio = 50.38;
+ ptr_art->precio = 50.38;
+ printf("Precio: %f",ptr_art->precio);
  return 0;
 
 }
+
   
