@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int value = 18;
-    int  *ptr_1, *ptr_2;
-    ptr_1 = &value;
-    ptr_2 = ptr_1;
+ int x = 33;
+ int y ;
+ int *p;
+ p = &x;
+ printf("El valor de p es %d ",*p);
+ y = *p +10;
+ printf("el valor de y es %d",y);
+ return 0;
 
-    printf("La direccion de memoria de ptr_2 = %p",ptr_2);
-    return(0);
-    
 }
   
