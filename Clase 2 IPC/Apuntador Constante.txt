@@ -1,0 +1,5 @@
+ int  x =, y = 7;
+int *const p = &x// Declaracion e inicializacion del apuntador a constante
+p=&y; //Esto es valido
+*p = 3; // Esto no es valido (el compilador genera error)
+p = &y;// Esto es valido 

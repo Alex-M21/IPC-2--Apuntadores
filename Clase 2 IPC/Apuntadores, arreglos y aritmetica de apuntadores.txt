@@ -1,0 +1,9 @@
+
+int list_arr[5] = (10,20,30,40,50);
+int *lista_ptr;
+lista_ptr = lista_arr; // A partir de aqui ambas variables apuntan al mismo sitio
+printf("%d/n"),lista_arr[0])//imprime 10
+printf("%d/n"),lista_arr[0])//imprime 10
+printf("%d/n"),lista_arr[0])//imprime 10
+printf("%d/n"),lista_arr[0])//imprime 10
+printf("%d/n"),lista_arr[0])//imprime 10

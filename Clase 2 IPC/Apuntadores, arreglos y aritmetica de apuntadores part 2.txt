@@ -1,0 +1,6 @@
+int lista[5] = {10,20,30,40,50};
+int *p;
+p=&lista[3]; // 'p' almacena la direccion de la posicion 3 del arreglo
+p = lista + 3 // instruccion equivalente a la anterior
+printf("%d\n",lista[2]);//imprime 30
+printf("%d\n",*(lista+2)); //Instrucciones equivalente a la anterior
